@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="commalindah.httpsgithub.towersofhanoi.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_title"
+                android:padding="20dp"
+                android:text="Towers of Hanoi Solver"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:textStyle="bold|italic"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_input_info"
+                android:layout_below="@id/tv_title"
+                android:textColor="#666666"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:text="Please enter the number of disks on the tower (no more than 12):"
+                android:paddingLeft="16dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_number_of_disks"
+                android:layout_below="@id/tv_input_info"
+                android:textSize="18sp"
+                android:hint="The Number of Disks"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:layout_margin="16dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_solution"
+                android:layout_below="@id/et_number_of_disks"
+                android:padding="16dp"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:textColor="#0000BB" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_error_message"
+                android:layout_below="@id/et_number_of_disks"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#BB0000" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
